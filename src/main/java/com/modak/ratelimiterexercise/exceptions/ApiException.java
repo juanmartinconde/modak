@@ -1,7 +1,9 @@
 package com.modak.ratelimiterexercise.exceptions;
 
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
+@Getter
 public class ApiException extends RuntimeException {
 
     private String code;
@@ -13,17 +15,5 @@ public class ApiException extends RuntimeException {
         this.statusCode = status;
         this.code = code;
         this.msg = msg;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public HttpStatus getStatusCode() {
-        return statusCode;
     }
 }
