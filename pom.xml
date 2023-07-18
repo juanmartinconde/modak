@@ -41,12 +41,6 @@
 			<version>3.17.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>it.ozimov</groupId>
-			<artifactId>embedded-redis</artifactId>
-			<version>0.7.3</version>
-		</dependency>
-
 		<!-- Bucket4J starter = Bucket4J + JCache -->
 		<dependency>
 			<groupId>com.giffing.bucket4j.spring.boot.starter</groupId>
